@@ -5,19 +5,42 @@
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
             <a href="#">RPL</a>
-        </div>
+        </div> 
         <ul class="sidebar-menu">
             <li class="menu-header">Menu</li>
+            
+            <!-- Dashboard -->
             <li class="{{ Route::is('admin.dashboard') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('admin.dashboard') }}">
-                    <i class="fas fa-home"></i> <span>Dashboard</span>
+                    <i class="fas fa-home"></i> 
+                    <span>Dashboard</span>
                 </a>
             </li>
-            <li class="{{ Route::is('admin.product') ? 'active' : '' }}">
+            
+            <!-- Produk -->
+            <li class="{{ Request::is('product*') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('admin.product') }}">
-                    <i class="fas fa-box"></i> <span>Produk</span>
+                    <i class="fas fa-box"></i>
+                    <span>Produk</span>
                 </a>
             </li>
+
+            <!-- Distributor -->
+            <li class="{{ Request::is('distributor*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('admin.distributor') }}">
+                    <i class="fas fa-truck"></i>
+                    <span>Distributor</span>
+                </a>
+            </li>
+
+            <!-- Flash Sale -->
+            <li class="{{ Request::is('flashsale*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('admin.flashsale') }}">
+                    <i class="fas fa-bolt"></i>
+                    <span>Flash Sale</span>
+                </a>
+            </li>
+
         </ul>
     </aside>
 </div>

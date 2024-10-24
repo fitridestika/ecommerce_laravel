@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Beranda</title>
 </head>
 <body>
-    <H1>SERVICE</H1>
-    <a href="/beranda">Home</a>
+    <h1>Selamat Datang di Beranda Website Saya</h1>
+    <a href="/welcome">Welcome</a>
+    <a href="/">Home</a>
     <a href="/produk">Produk</a>
     <a href="/service">Service</a>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ad dolorem quibusdam, quisquam praesentium debitis, ut, minima sunt quis eaque dolor nesciunt cumque rerum suscipit pariatur dolorum eveniet porro odit!</p>
+    <p>
+        Ini Adalah Halaman Service
+    </p>
 </body>
 </html>
